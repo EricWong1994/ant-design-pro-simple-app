@@ -37,9 +37,15 @@
   "lint-staged": {
     "**/*.less": "stylelint --syntax less",
     "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
-    "**/*.{js,jsx,tsx,ts,less,md,json}": ["prettier --write"]
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier --write"
+    ]
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 10"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@ant-design/pro-descriptions": "^1.10.0",
@@ -92,11 +98,17 @@
     "mockjs": "^1.1.0",
     "prettier": "^2.5.0",
     "puppeteer-core": "^8.0.0",
+    "rc-resize-observer": "^1.2.0",
     "stylelint": "^13.0.0",
+    "swagger-ui-dist": "^4.15.5",
     "swagger-ui-react": "^3.52.0",
     "typescript": "^4.5.0",
     "umi-serve": "^1.9.10"
   },
-  "engines": { "node": ">=10.0.0" },
-  "gitHooks": { "commit-msg": "fabric verify-commit" }
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "gitHooks": {
+    "commit-msg": "fabric verify-commit"
+  }
 }
